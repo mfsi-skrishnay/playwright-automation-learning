@@ -19,26 +19,26 @@ export default defineConfig({
       }
     },
 
-    {
-      name: 'firefox',
-      use: {
-        ...devices['Desktop Firefox']
-      }
-    },
+    // {
+    //   name: 'firefox',
+    //   use: {
+    //     ...devices['Desktop Firefox']
+    //   }
+    // },
 
-    {
-      name: 'webkit',
-      use: {
-        ...devices['Desktop Safari']
-      }
-    },
+    // {
+    //   name: 'webkit',
+    //   use: {
+    //     ...devices['Desktop Safari']
+    //   }
+    // },
 
-    {
-      name: 'iPhone-15',
-      use: {
-        ...devices['iPhone 15']
-      }
-    }
+    // {
+    //   name: 'iPhone-15',
+    //   use: {
+    //     ...devices['iPhone 15']
+    //   }
+    // }
   ],
 
   reporter: 'html'
