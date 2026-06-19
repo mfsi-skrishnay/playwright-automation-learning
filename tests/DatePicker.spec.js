@@ -30,5 +30,7 @@ test("Handling DatePicker", async ({ page }) => {
 
      //Date selection without loop
      await page.click(`//a[@class="ui-state-default"][text()='${day}'] `)
-     await page.waitForTimeout(3000);
+    // Validate the selected date 
+    
+
 });
