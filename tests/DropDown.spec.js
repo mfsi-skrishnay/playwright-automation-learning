@@ -15,9 +15,9 @@ test("Handle DropDown",async({page})=>{
     await expect(options).toHaveCount(10);
 
    // 2) Check no of optioms in dropdown
-    const options= await page.$$('#country option')
-    console.log("Number of options", options.length)
-    await expect(options.length).toBe(10)
+    // const options= await page.$$('#country option')
+    // console.log("Number of options", options.length)
+    // await expect(options.length).toBe(10)
 
     //3) Check Presence of value in dropdown
    const content= await page.locator('#country').textContent()

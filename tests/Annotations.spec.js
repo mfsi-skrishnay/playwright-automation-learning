@@ -40,7 +40,7 @@ test('Test3', async({page,browserName})=>{
 })
 
 //slow x3 times slow
-test('Test2', async({page})=>{
+test('Test4', async({page})=>{
     test.slow();
     page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
     console.log("This is test2 , its open with bug")
