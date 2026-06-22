@@ -8,7 +8,8 @@ export default defineConfig({
     headless: false,
     trace: 'on-first-retry'
   },
-  workers: 8,
+  fullyParallel: true,
+  workers: 4,
   //grep:/@smoke/,
   //grepInvert: /@skip/,
   projects: [
