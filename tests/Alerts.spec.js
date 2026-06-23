@@ -4,13 +4,11 @@ const { test, expect } = require('@playwright/test');
 test.skip("Alert with Ok button", async ({ page }) => {
     await page.goto('https://testautomationpractice.blogspot.com/');
 
-    // Dialog handler
-    page.on('dialog', async dialog => {
+    page.on('dialog', async dialog => {                                 // Dialog handler
         expect(dialog.type()).toBe('alert');
         expect(dialog.message()).toContain('I am an alert box!');
         await dialog.accept();
     });
-
     const simpleAlert = page.getByText('Simple Alert', { exact: true });
     await simpleAlert.click();
 
@@ -22,13 +20,12 @@ test.skip("Alert with Ok button", async ({ page }) => {
 test("Alert with Ok and cancel button", async ({ page }) => {
     await page.goto('https://testautomationpractice.blogspot.com/');
 
-    // Dialog handler
-    page.on('dialog', async dialog => {
+    page.on('dialog', async dialog => {                                     // Dialog handler
         expect(dialog.type()).toBe('confirm');
         expect(dialog.message()).toContain('Press a button!');
 
-        await dialog.accept();      // Click OK
-        // await dialog.dismiss();  // Click Cancel
+        await dialog.accept();               
+        // await dialog.dismiss();          
     });
 
     const confirmationDialog = page.getByText('Confirmation Alert', { exact: true });

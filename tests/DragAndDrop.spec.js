@@ -11,7 +11,7 @@ test('Drag and Drop', async({page})=>{
     await page.mouse.up();
 
     //Method2
-    //await source.dragTo(target);
+    await source.dragTo(target);
 
     
 })

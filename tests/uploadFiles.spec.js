@@ -10,9 +10,8 @@ test.only('Upload Multipe Files', async({page})=>{
     await page.locator('#multipleFilesInput').setInputFiles(['tests\\Upload-File\\file-sample_1.pdf' , 'tests\\Upload-File\\file-sample_1.pdf'])
     await page.getByText('Upload Multiple Files', { exact: true }).click();
 
-    //Removing Files
-    await page.locator('#multipleFilesInput').setInputFiles([])
-    await page.waitForTimeout(4000)
+    await page.locator('#multipleFilesInput').setInputFiles([])           //Removing Files
+
 
 
 })

@@ -3,5 +3,4 @@ test("Mouse Hover Actions",async({page})=>{
     await page.goto('https://testautomationpractice.blogspot.com/')
     const element= await page.getByText('Point Me')
     await element.hover();
-    await page.waitForTimeout(3000);
 })

@@ -8,7 +8,7 @@ test("Handling Frames", async ({ page }) => {
     console.log("No of frames: ", allFrames.length)
 
     //Approach1 - using name or URL of frame
-   // const frame1= await page.frame('name') 
+   // const frame1= await page.frame({name:'frame1'}) 
     const frame1=await page.frames({url:'https://vinothqaacademy.com/webtable/'})
     frame1.fill('#nameInput','Krishna');
    

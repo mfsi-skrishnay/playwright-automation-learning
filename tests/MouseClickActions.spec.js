@@ -10,8 +10,8 @@ test('Mouse RightCLick', async({page})=>{
     //Right Click Action 
     await Rightbutton.click({button:'right'})
     //Double click Action 
-          //Method 1: await DoubleClickBtn.click({clickCount:2})
-    await DoubleClickBtn.dblclick()
+    await DoubleClickBtn.click({clickCount:2})        //Method 1 
+    await DoubleClickBtn.dblclick()                   //Method 2
 
 
 
