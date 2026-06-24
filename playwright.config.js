@@ -13,22 +13,22 @@ export default defineConfig({
   //grep:/@smoke/,
   //grepInvert: /@skip/,
   projects: [
-    {
-      name: 'chromium',
-      use: {
-        ...devices['Desktop Chrome'],
-          launchOptions: {
-          args: ['--start-maximized']
-        }
-      }
-    },
-
     // {
-    //   name: 'firefox',
+    //   name: 'chromium',
     //   use: {
-    //     ...devices['Desktop Firefox']
+    //     ...devices['Desktop Chrome'],
+    //       launchOptions: {
+    //       args: ['--start-maximized']
+    //     }
     //   }
     // },
+
+    {
+      name: 'firefox',
+      use: {
+        ...devices['Desktop Firefox']
+      }
+    },
 
     // {
     //   name: 'webkit',

@@ -8,5 +8,4 @@ test("Inner Frames", async ({ page }) => {
     const childFrame=await parentFrame.frameLocator('iframe')
     await expect(childFrame.locator('p')).toHaveText('Child Iframe')
 
-    await page.waitForTimeout(3000);
 });

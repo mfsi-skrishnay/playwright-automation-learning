@@ -11,7 +11,7 @@ test("Handling Frames", async ({ page }) => {
    // const frame1= await page.frame({name:'frame1'}) 
     const frame1=await page.frames({url:'https://vinothqaacademy.com/webtable/'})
     frame1.fill('#nameInput','Krishna');
-   
+   await page.locator()
 
     //Approach 2- Using framelocator
     const inputBox=await page.frameLocator('iframe[name="employeetable"]').locator('#roleInput')

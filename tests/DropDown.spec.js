@@ -3,11 +3,11 @@ test("Handle DropDown",async({page})=>{
     await page.goto("https://testautomationpractice.blogspot.com/");
 
 
-//    await page.locator("#country").selectOption({label:'India'});  //Using label
-//    await page.locator("#country").selectOption('India');  //Using visible text
-//    await page.locator("#country").selectOption({value:'uk'});  //Using value
-//    await page.locator("#country").selectOption({index:3});  //Using value
-//    await page.selectOption("#country",'India')    //By text 
+   await page.locator("#country").selectOption({label:'India'});  //Using label
+   await page.locator("#country").selectOption('India');  //Using visible text
+   await page.locator("#country").selectOption({value:'uk'});  //Using value
+   await page.locator("#country").selectOption({index:3});  //Using value
+   await page.selectOption("#country",'India')    //By text 
     
     //Assesrtions 
     //1) Total no. of options in a dropdown 
